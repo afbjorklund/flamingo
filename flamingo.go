@@ -70,7 +70,7 @@ func main() {
 		flog.Fatal("current user doesn't have root privileges")
 	}
 
-	centOS := distro.CentOS(sys.DefaultExecutor)
+	distribution := distro.Distro(sys.DefaultExecutor)
 
 	if err := InitializeContextualization(); err != nil {
 		flog.Fatal("Failed to start contextualization",
@@ -119,19 +119,19 @@ func main() {
 		)
 	}
 
-	if err := centOS.ConsumeMetadata(m); err != nil {
+	if err := distribution.ConsumeMetadata(m); err != nil {
 		flog.Fatal("Failed to consume meta-data",
 			flog.Fields{
 				Event: "distro.Implementation.ConsumeMetadata",
 				Error: err,
 			},
 			flog.Details{
-				"distribution": "CentOS",
+				"distribution": distribution.Name,
 			},
 		)
 	}
 
-	if err := centOS.ConsumeUserdata(u); err != nil {
+	if err := distribution.ConsumeUserdata(u); err != nil {
 		flog.Fatal("Failed to consume user-data",
 			flog.Fields{
 				Event: "distro.Implementation.ConsumeMetadata",

@@ -21,12 +21,17 @@ import (
 type Implementation struct {
 	sys.Executor
 
+	Distro string
 	ID    identity.Manager
 	NSS   nss.Service
 	Initd initd.Manager
 
 	// TODO(tmrts): Change to firewall.Manager interface
 	Firewall *iptables.Implementation
+}
+
+func (imp *Implementation) Name() string {
+	return imp.Distro
 }
 
 // SetHostname changes the hostname of the given distribution.

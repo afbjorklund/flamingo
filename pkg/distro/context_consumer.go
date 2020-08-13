@@ -14,6 +14,7 @@ import (
 // The expected implementers of the interface are operating
 // system implementations.
 type ContextConsumer interface {
+	Name() string
 	ConsumeUserdata(userdata.Map) error
 	ConsumeMetadata(*metadata.Digest) error
 }

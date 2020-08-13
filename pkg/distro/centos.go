@@ -13,7 +13,7 @@ import (
 func CentOS(exec sys.Executor) ContextConsumer {
 	return &Implementation{
 		Executor: exec,
-
+		Distro:  "CentOS",
 		ID:       identity.NewManager(exec),
 		NSS:      &nss.Server{exec},
 		Firewall: &iptables.Implementation{exec},
