@@ -4,8 +4,9 @@ go 1.14
 
 require (
 	github.com/Sirupsen/logrus v0.8.7-0.20150808072048-9c060de64359
-	github.com/jtolds/gls v0.0.0-20150401064343-9a4a02dbe491
-	github.com/smartystreets/assertions v0.0.0-20150702230347-6427400a3940
-	github.com/smartystreets/goconvey v1.5.1-0.20150702230755-b903fa1aa6da
+	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
+	github.com/smartystreets/goconvey v1.6.4
+	github.com/stretchr/testify v1.6.1 // indirect
+	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
 	gopkg.in/yaml.v2 v2.0.0-20150624102902-7ad95dd0798a
 )
