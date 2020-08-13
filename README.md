@@ -71,7 +71,7 @@ If you'd like to contribute, learn more, or share your opinions
 please feel free to open an issue, mail to [centos-devel], [atomic],
 user-list or come to [#atomic](irc://irc.freenode.net/#atomic-devel) and [#centos-devel](irc://irc.freenode.net/#centos-devel) irc channels to have a chat.
 
-[Introducing Flamingo]: http://tmrts.com/post/flamingo/
+[Introducing Flamingo]: http://tmrts.com/blog/flamingo-a-lightweight-cloud-instance-contextualization-tool/
 [cloud-init]: http://cloudinit.readthedocs.org/en/latest/
 [Kubernetes]: http://kubernetes.io
 [Atomic Host]: http://projectatomic.io
