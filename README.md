@@ -1,6 +1,6 @@
 # Flamingo
 
-[![Travis Widget]][Travis] [![Coverage Widget]][Coverage] [![Documentation Widget]][Documentation] [![Waffle Widget]][Waffle]
+[![Travis Widget]][Travis] [![Coverage Widget]][Coverage] [![Documentation Widget]][Documentation]
 
 [Travis Widget]: https://travis-ci.org/tmrts/flamingo.svg?branch=master
 [Travis]: http://travis-ci.org/tmrts/flamingo
@@ -8,8 +8,6 @@
 [Coverage]: https://coveralls.io/github/tmrts/flamingo?branch=master
 [Documentation Widget]: https://godoc.org/github.com/tmrts/flamingo?status.png
 [Documentation]: https://godoc.orgp/github.com/tmrts/flamingo
-[Waffle Widget]: https://badge.waffle.io/tmrts/flamingo.png?label=ready&title=Ready
-[Waffle]: https://waffle.io/tmrts/flamingo
 
 ![Flamingo Logo](/logo.png)
 
